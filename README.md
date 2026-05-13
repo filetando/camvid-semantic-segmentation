@@ -12,10 +12,16 @@ intencional da narrativa.
 
 ### Versão 2025 — Aprendendo do Zero
 
-O projeto nasceu como trabalho em grupo, sem instrução formal, construído
-na tentativa e erro analisando outros projetos no mesmo dataset. Chegamos
-a um notebook funcional, mas com problemas sérios que só identificamos
-depois:
+O projeto nasceu como trabalho em grupo durante um bootcamp de dados.
+O programa cobriu Python, manipulação e visualização de dados e
+introdução ao aprendizado de máquina. Foi uma base sólida, mas que
+naturalmente não aprofundou os detalhes práticos de como treinar modelos
+de visão computacional. A parte de segmentação semântica foi
+construída explorando notebooks da comunidade no Kaggle, adaptando
+o que encontrávamos e aprendendo na prática.
+
+Chegamos a um notebook funcional, mas com problemas sérios que só
+identificamos depois com os conceitos mais aprofundados:
 
 - **Métricas completamente quebradas** — IoU retornava `-1.12`, um valor
   impossível. A implementação usava `smp.utils.metrics` de forma incorreta
