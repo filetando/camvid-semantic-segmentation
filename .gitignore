@@ -1,3 +1,11 @@
+# --- Dataset (pesado demais para o GitHub) ---
+camvid/
+camvid_backup/
+
+# --- Modelos treinados ---
+*.pth
+*.pt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
