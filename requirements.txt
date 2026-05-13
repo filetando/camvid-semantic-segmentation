@@ -1,0 +1,44 @@
+# ============================================================
+# Segmentação Semântica em Ambientes Naturais — CamVid
+# Ambiente testado: Python 3.12
+# ============================================================
+#
+# COMO USAR (execução local):
+#   1. Instale o PyTorch manualmente (veja instrução abaixo)
+#   2. Execute: pip install -r requirements.txt
+#
+# GOOGLE COLAB:
+#   PyTorch já vem pré-instalado. Execute a célula de instalação
+#   no início do notebook para instalar o restante.
+# ============================================================
+
+# --- PyTorch (Deep Learning) ---
+# NÃO instale pelo requirements.txt — a versão correta depende
+# do seu sistema operacional e versão do CUDA (driver da GPU).
+# Gere o comando certo para sua máquina em:
+# https://pytorch.org/get-started/locally/
+#
+# No Google Colab, o PyTorch já vem pré-instalado. ✓
+
+# --- Segmentação e Métricas ---
+segmentation-models-pytorch>=0.3.3   # Arquiteturas prontas (U-Net, FPN, etc.)
+torchmetrics>=1.3.0                  # Métricas corretas para multiclasse (IoU, Dice, etc.)
+
+# --- Manipulação de Imagens e Augmentação ---
+opencv-python-headless>=4.9.0        # Leitura/escrita de imagens (headless = sem GUI)
+albumentations>=1.4.0                # Pipeline de augmentação de dados
+Pillow>=10.0.0                       # Manipulação de imagens (PIL)
+
+# --- Dados e Análise ---
+numpy>=1.26.0
+pandas>=2.0.0
+scikit-learn>=1.3.0                  # Métricas auxiliares e utilitários
+
+# --- Visualização ---
+matplotlib>=3.7.0
+seaborn>=0.13.0
+
+# --- Utilitários ---
+tqdm>=4.66.0                         # Barra de progresso
+imagehash>=4.3.0                     # Detecção de imagens duplicadas
+opendatasets>=0.1.22                 # Download de datasets do Kaggle
